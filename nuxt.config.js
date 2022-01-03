@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'ghp',
+    title: 'Brandon Ortiz | AppSec Engineer',
     htmlAttrs: {
       lang: 'en'
     },
@@ -15,8 +15,8 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -42,7 +42,31 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    '@nuxtjs/i18n',
+    '@nuxt/components'
   ],
+
+  i18n: {
+    lazy: true,
+    locales: [
+      { 
+        code: 'en',
+        iso: 'en-US',
+        langFile: 'en.js',
+        file: 'en.js',
+      },
+      { 
+        code: 'es',
+        iso: 'es-MX',
+        langFile: 'es.js',
+        file: 'es.js',
+      },
+    ],
+    loadLanguageAsync: true,
+    langDir: 'locales/',
+    defaultLocale: 'en',
+    noPrefixDefaultLocale: true
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
