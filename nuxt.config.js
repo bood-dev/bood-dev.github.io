@@ -49,13 +49,13 @@ export default {
   i18n: {
     lazy: true,
     locales: [
-      { 
+      {
         code: 'en',
         iso: 'en-US',
         langFile: 'en.js',
         file: 'en.js',
       },
-      { 
+      {
         code: 'es',
         iso: 'es-MX',
         langFile: 'es.js',

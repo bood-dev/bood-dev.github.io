@@ -14,7 +14,7 @@
                     <span class="inline-block text-blue-500">{{ $t('about_position') }}</span>
                 </h5>
                 <p class="mb-6 text-gray-900">
-                    {{ $t('about_description_1') }} <strong>blog</strong>.
+                    {{ $t('about_description_1') }} <nuxt-link :to="localePath('blog')" class="text-blue-500"><strong>blog</strong></nuxt-link>.
                 </p>
                 <hr class="mb-5 border-gray-300" />
                 <div class="flex items-center space-x-4">
@@ -26,14 +26,14 @@
                     </svg>
                     </a>
 
-                    <button type="submit" class="inline-flex items-center justify-center h-10 px-4 mr-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-600 hover:bg-blue-700 focus:shadow-outline focus:outline-none">
+                    <a href="CV - Brandon Ortiz.pdf" target="_blank" class="inline-flex items-center justify-center h-10 px-4 mr-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-500 hover:bg-blue-700 focus:shadow-outline focus:outline-none">
                     {{ $t('about_download_CV') }}
-                    </button>
+                    </a>
                 </div>
             </div>
 
             <div>
-                <img class="object-cover w-full h-56 rounded shadow-lg sm:h-96" src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260" alt="" />
+                <img class="object-contain w-full h-56 sm:h-96" src="developer-activity.png" alt="" />
             </div>
         </div>
     </div>

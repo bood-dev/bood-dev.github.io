@@ -8,12 +8,12 @@
         Blog
       </h2>
       <p class="text-base text-gray-700 md:text-lg">
-        Blog dedicado a temas de desarrollo de software y seguridad en aplicaciones web y móviles.
+        {{ $t('blog_description') }}
       </p>
     </div>
 
     <div class="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
-      
+
       <article
         class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm"
         v-for="(post, $index) in posts"
@@ -47,12 +47,13 @@ export default {
   name: 'Blog',
   async asyncData(context) {
     const { $content, app } = context;
-    const posts = await $content(`${app.i18n.locale}/blog`).fetch();
+    const defaultLocale = app.i18n.locale;
+    const posts = await $content(`${defaultLocale}/blog`).fetch();
 
     return {
       posts: posts.map(post => ({
         ...post,
-        path: post.path.replace(`/${app.i18n.locale}`, '')
+        //path: post.path.replace(`/${defaultLocale}`, '')
       })),
     }
   },

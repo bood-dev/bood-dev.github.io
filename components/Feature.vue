@@ -1,0 +1,19 @@
+<template>
+    <div class="duration-300 transform bg-white border-l-4 border-blue-500 hover:-translate-y-2">
+        <div class="h-full p-5 border border-l-0 rounded-r shadow-sm">
+          <h6 class="mb-2 font-semibold leading-5">{{ title }}</h6>
+          <p class="text-sm text-gray-900">
+            {{ description }}
+          </p>
+        </div>
+      </div>
+</template>
+
+<script>
+export default {
+    props: {
+        title: String,
+        description: String
+    }
+}
+</script>

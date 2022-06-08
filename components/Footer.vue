@@ -1,0 +1,22 @@
+<template>
+    <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+        <div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
+            <p class="text-sm text-gray-600">Brandon Ortiz</p>
+            <div class="flex items-center mt-1 space-x-3">
+                <a href="https://twitter.com/_bood" target="_blank" class="text-gray-500 transition-colors duration-300 hover:text-blue-500">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
+                        <path
+                        d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z"
+                        ></path>
+                    </svg>
+                </a>
+
+                <a href="https://www.linkedin.com/in/brandon-ortiz/" target="_blank" class="text-gray-500 transition-colors duration-300 hover:text-blue-500">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="h-6">
+                    <path fill="none" d="M0 0h24v24H0z"/>
+                    <path d="M18.335 18.339H15.67v-4.177c0-.996-.02-2.278-1.39-2.278-1.389 0-1.601 1.084-1.601 2.205v4.25h-2.666V9.75h2.56v1.17h.035c.358-.674 1.228-1.387 2.528-1.387 2.7 0 3.2 1.778 3.2 4.091v4.715zM7.003 8.575a1.546 1.546 0 0 1-1.548-1.549 1.548 1.548 0 1 1 1.547 1.549zm1.336 9.764H5.666V9.75H8.34v8.589zM19.67 3H4.329C3.593 3 3 3.58 3 4.297v15.406C3 20.42 3.594 21 4.328 21h15.338C20.4 21 21 20.42 21 19.703V4.297C21 3.58 20.4 3 19.666 3h.003z"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</template>
