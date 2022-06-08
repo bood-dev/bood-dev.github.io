@@ -21,6 +21,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@/assets/css/tailwind.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -47,7 +48,7 @@ export default {
   ],
 
   i18n: {
-    lazy: true,
+    //lazy: true,
     locales: [
       {
         code: 'en',
@@ -62,7 +63,7 @@ export default {
         file: 'es.js',
       },
     ],
-    loadLanguageAsync: true,
+    // loadLanguageAsync: true,
     langDir: 'locales/',
     defaultLocale: 'en',
     noPrefixDefaultLocale: true

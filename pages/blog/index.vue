@@ -50,11 +50,19 @@ export default {
     const defaultLocale = app.i18n.locale;
     const posts = await $content(`${defaultLocale}/blog`).fetch();
 
-    return {
-      posts: posts.map(post => ({
-        ...post,
-        //path: post.path.replace(`/${defaultLocale}`, '')
-      })),
+    if (defaultLocale == "en") {
+      return {
+        posts: posts.map(post => ({
+          ...post,
+          path: post.path.replace(`/${defaultLocale}`, '')
+        }))
+      }
+    } else {
+      return {
+        posts: posts.map(post => ({
+          ...post
+        }))
+      }
     }
   },
 }
