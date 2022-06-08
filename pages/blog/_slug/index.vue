@@ -1,6 +1,6 @@
 <template>
   <article>
-    <nuxt-content :document="post" />
+    <NuxtContent :document="post" class="prose"/>
   </article>
 </template>
 
