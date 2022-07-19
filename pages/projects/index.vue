@@ -13,7 +13,7 @@
     </div>
 
     <div class="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
-      
+
       <article
         class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm"
         v-for="(project, $index) in projects"
@@ -47,13 +47,22 @@ export default {
   name: 'Projects',
   async asyncData(context) {
     const { $content, app } = context;
-    const projects = await $content(`${app.i18n.locale}/projects`).fetch();
+    const defaultLocale = app.i18n.locale;
+    const projects = await $content(`${defaultLocale}/projects`).fetch();
 
-    return {
-      projects: projects.map(project => ({
-        ...project,
-        path: project.path.replace(`/${app.i18n.locale}`, '')
-      })),
+    if (defaultLocale == "en") {
+      return {
+        projects: projects.map(project => ({
+          ...project,
+          path: project.path.replace(`/${defaultLocale}`, '')
+        }))
+      }
+    } else {
+      return {
+        projects: projects.map(project => ({
+          ...project
+        }))
+      }
     }
   },
 }
