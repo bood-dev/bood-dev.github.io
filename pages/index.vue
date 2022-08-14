@@ -6,8 +6,6 @@
 
     <Features />
 
-    <Blog />
-
     <Footer />
   </div>
 </template>
@@ -22,7 +20,17 @@ export default {
         lang: this.$i18n.locale,
       },
       meta: [
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: 'Página personal de Brandon Ortiz, escribo acerca de temas relacionados con la seguridad en aplicaciones web y móviles'
+        },
 
+        {
+          hid: 'twitter:creator',
+          property: 'twitter:creator',
+          content: '@_bood'
+        }
       ],
     };
   },

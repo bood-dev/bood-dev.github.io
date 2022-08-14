@@ -28,19 +28,19 @@
       </a>
       <ul class="flex items-center hidden space-x-8 lg:flex">
         <li>
-          <nuxt-link :to="localePath('/')" 
+          <nuxt-link :to="localePath('/')"
             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-500">
             {{ $t('header_about_me') }}
           </nuxt-link>
-        </li>        
+        </li>
         <li>
-          <nuxt-link :to="localePath('blog')" 
+          <nuxt-link :to="localePath('blog')"
             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-500">
             {{ $t('header_blog') }}
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="localePath('projects')" 
+          <nuxt-link :to="localePath('projects')"
             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-500">
             {{ $t('header_projects') }}
           </nuxt-link>
@@ -103,19 +103,19 @@
             <nav>
               <ul class="space-y-4">
                 <li>
-                  <nuxt-link :to="localePath('/')" 
+                  <nuxt-link :to="localePath('/')"
                     class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-500">
                     {{ $t('header_about_me') }}
                   </nuxt-link>
-                </li>        
+                </li>
                 <li>
-                  <nuxt-link :to="localePath('blog')" 
+                  <nuxt-link :to="localePath('blog')"
                     class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-500">
                     {{ $t('header_blog') }}
                   </nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link :to="localePath('projects')" 
+                  <nuxt-link :to="localePath('projects')"
                     class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-500">
                     {{ $t('header_projects') }}
                   </nuxt-link>

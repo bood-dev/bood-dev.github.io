@@ -26,5 +26,9 @@ export default {
     home_title_latest_blog_posts: 'Latest blog posts',
     home_button_blog: 'See all blog posts',
 
+    blog_title: 'Blog',
     blog_description: 'Blog about web development, web and mobile applications security.',
+
+    projects_title: 'Projects',
+    projects_description: 'List of projects',
 }

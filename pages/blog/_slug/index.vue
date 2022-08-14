@@ -2,19 +2,22 @@
   <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
     <Header />
 
-    <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-      <br>
-      <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
-        {{ post.title }}
-      </h2>
-      <p class="text-base text-gray-700 md:text-lg">
-        {{ post.description }}
-      </p>
-    </div>
+    <div class="container w-full md:max-w-3xl mx-auto pt-5">
+      <div class="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal" style="font-family:Georgia,serif;">
 
-    <article>
-      <NuxtContent :document="post" class="prose"/>
-    </article>
+        <!--Title-->
+        <div class="font-sans">
+              <h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">{{ post.title }}</h1>
+              <p class="text-sm md:text-base font-normal text-gray-600">Published 19 February 2019</p>
+        </div>
+
+        <br>
+
+        <article>
+          <NuxtContent :document="post" class="prose"/>
+        </article>
+      </div>
+    </div>
   </div>
 </template>
 

@@ -5,7 +5,7 @@
     <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
       <br>
       <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
-        Blog
+        {{ $t('blog_title') }}
       </h2>
       <p class="text-base text-gray-700 md:text-lg">
         {{ $t('blog_description') }}
@@ -65,5 +65,10 @@ export default {
       }
     }
   },
+  head() {
+    return {
+      title: 'Brandon Ortiz | Blog'
+    }
+  }
 }
 </script>
