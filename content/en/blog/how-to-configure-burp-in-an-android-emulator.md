@@ -1,12 +1,14 @@
 ---
-title: My first article
+title: How to configure Burp in an Android emulator
 category: 
-  - web
-  - hacking
   - how to
+  - hacking
+  - mobile
 description: Step by step tutorial on how to stop being sad and being awesome instead.
-date: 1st January 2022
-media: https://i.pinimg.com/736x/63/4d/6c/634d6c9d7d1bdbbeb59aeeada8e2c31c.jpg
+date: August 15th, 2022
+media: /blog/how-to-configure-burp-in-an-android-emulator/burp-suite-android.png
+attribution_link: https://storyset.com/technology
+attribution_text: Technology illustrations by Storyset
 ---
 
 # h1 Heading

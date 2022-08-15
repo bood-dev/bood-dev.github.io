@@ -29,6 +29,8 @@ export default {
     blog_title: 'Blog',
     blog_description: 'Blog about web development, web and mobile applications security.',
 
+    post_published: 'Published',
+
     projects_title: 'Projects',
     projects_description: 'List of projects',
 }
