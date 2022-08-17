@@ -22,7 +22,7 @@
         <img :src="post.media" class="object-cover w-full h-64" :alt="post.title" />
         <div class="p-5 border border-t-0">
           <p class="mb-3 text-xs font-semibold tracking-wide uppercase">
-            <a href="/" class="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700" aria-label="Category" :title="post.category">{{ post.category }}</a>
+            <a href="/" class="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700" aria-label="Tags" :title="post.tags">{{ post.tags }}</a>
             <span class="text-gray-600">— {{ post.date }}</span>
           </p>
 
@@ -39,6 +39,8 @@
       </article>
 
     </div>
+
+    <Footer />
   </div>
 </template>
 

@@ -11,6 +11,7 @@
         <div class="font-sans">
               <h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">{{ post.title }}</h1>
               <p class="text-sm md:text-base font-normal text-gray-600">{{ $t('post_published') }} {{ post.date }}</p>
+              <p class="text-sm md:text-base font-normal text-blue-600"><a href="https://twitter.com/_bood" target="_blank">@_bood</a></p>
         </div>
 
         <br>
@@ -20,6 +21,8 @@
         </article>
       </div>
     </div>
+
+    <Footer />
   </div>
 </template>
 
@@ -61,16 +64,37 @@ export default {
           content: this.post.media
         },
         {
-          hid: 'og:url',
-          property: 'og:url',
-          content: ''
+          hid: 'og:site_name',
+          property: 'og:site_name',
+          content: 'bood.dev'
         },
 
+        {
+          hid: 'twitter:card',
+          property: 'twitter:card',
+          content: 'summary_large_image'
+        },
         {
           hid: 'twitter:creator',
           property: 'twitter:creator',
           content: '@_bood'
+        },
+        {
+          hid: 'twitter:domain',
+          property: 'twitter:domain',
+          content: 'bood.dev'
+        },
+        {
+          hid: 'twitter:image',
+          property: 'twitter:image',
+          content: this.post.media
+        },
+        {
+          hid: 'twitter:site',
+          property: 'twitter:site',
+          content: '@_bood'
         }
+
       ],
     };
   },

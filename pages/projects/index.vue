@@ -39,6 +39,8 @@
       </article>
 
     </div>
+
+    <Footer />
   </div>
 </template>
 
