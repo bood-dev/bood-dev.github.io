@@ -18,7 +18,7 @@
                 </p>
                 <hr class="mb-5 border-gray-300" />
                 <div class="flex items-center space-x-4">
-                    <a href="/CV - Brandon Ortiz.pdf" target="_blank" class="inline-flex items-center justify-center h-10 px-4 mr-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-500 hover:bg-blue-700 focus:shadow-outline focus:outline-none">
+                    <a href="/Brandon Ortiz - CV.pdf" target="_blank" class="inline-flex items-center justify-center h-10 px-4 mr-4 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-500 hover:bg-blue-700 focus:shadow-outline focus:outline-none">
                     {{ $t('about_download_CV') }}
                     </a>
                 </div>
